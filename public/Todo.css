@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el overlay semitransparente */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: none; /* Inicialmente oculto */
+    z-index: 9999; /* Z-index alto para estar por encima de todo */
+}
+
+#overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+
+#overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.Mostrar2{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #1b2854;
+    color: black;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+}
+
+.logoBlanco{
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.cuerpo{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.margen{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Links{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 2px;
+    font-size: 21px;
+}
+
+.LinksPrincipal{
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 4px;
+    background-color: white;
+    color: #1b2854;
+    transition: .3s;
+    border-radius: 3px;
+
+}
+
+.LinksPrincipal:hover{
+    color: white;
+    background-color: #1b2854;
+    border: 2px solid white;
+ }
+
+.Links:hover{
+   background-color: white;
+   color: black;
+   transition: .3s;
+}
+
+.display{
+    display: flex;
+}
+
+.botonArchivos {
+    position: absolute;
+    margin-top: 4px;
+    right: 0; /* Alinea el botón a la izquierda dentro de su contenedor */
+    margin-right: 60px;
+}
+
+.botonPasos {
+    position: absolute;
+    margin-top: 4px;
+    right: 0; /* Alinea el botón a la izquierda dentro de su contenedor */
+    margin-right: 160px;
+}
+
+.contenedorAcciones{
+    background-color: black;
+    color: white;
+    width: 28%;
+    height: 130px;
+    font-size: 27px;
+    padding-bottom: 5px;
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .contenedorAcciones{
+    font-size: 24px;
+    height: 120px;
+    padding-bottom: 5px;
+    width: 26%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .contenedorAcciones{
+    font-size: 18px;
+    height: 100px;
+    padding-bottom: 4.5px;
+    width: 24%;
+    }
+}
+
+@media (max-width: 850px) {
+    .contenedorAcciones{
+    font-size: 30px;
+    height: 100px;
+    padding-bottom: 4.5px;
+    width: 40%;
+    margin-left: 7%;
+    }
+
+    .Mostrar2{
+        display: block;
+    }
+
+    .Mostrar4{
+        display: none;
+    }
+}
+
+.contenedorAcciones:hover{
+    background-color: rgb(37, 34, 34);
+}
+
+.AccionesLink{
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.ValidarDivB{
+    width: 39.8%; 
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente al centro */
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+.NuevoTabla{
+  background-color: rgb(46, 62, 234);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  height: 30px;
+  position: absolute;
+  right: 0; /* Alinea el botón a la izquierda dentro de su contenedor */
+  margin-right: 60px;
+  margin-top: 10px;
+}
+
+.ServiciosTodos{
+  background-color: rgb(46, 62, 234);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  height: 30px;
+  position: absolute;
+  right: 0; /* Alinea el botón a la izquierda dentro de su contenedor */
+  top: 0;
+  margin-right: 60px;
+  margin-top: 150px;  
+
+}
+
+.EspaciadoCuatro{
+    width: 46%;
+    margin-left: 2%;
+}
+
+.display{
+    display: flex;
+}
+
+.botonesAlm{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centrado horizontal */
+}
+
+.BotonLado{
+    margin-left: 45px;
+    position: relative;
+    top: 32px;
+}
+
+.RegresarT{
+    background-color: rgb(46, 62, 234);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    height: 30px;
+    position: absolute;
+    right: 0; /* Alinea el botón a la izquierda dentro de su contenedor */
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+.ReanudarBoton{
+    font-size: 8vw;
+    margin-left: 7vw;
+    background-color: #1b2854;
+    color: white;
+    text-decoration: none;
+    margin-top: 2vh;
+    border-radius: 2vw;
+    padding: 2vw;
+    border: none;
+}
+
+.ReanudarBoton:hover{
+    transition: .3s;
+    background-color: #24397e;
+}
+
+.EmpezarBoton{
+    font-size: 9.5vw;
+    margin-left: 4vw;
+    background-color: #1b2854;
+    color: white;
+    text-decoration: none;
+    margin-top: 10vh;
+    border-radius: 2vw;
+    padding: 2vw;
+    border: none;
+}
+
+
+
+.DejarBoton{
+    font-size: 35px;
+    background-color: #1b2854;
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: .5vw;
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+
+.DejarBoton:hover{
+    transition: .3s;
+    font-size: 35px;
+    background-color:rgb(10, 24, 145);;
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: .5vw;
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.EmpezarBoton:hover{
+    transition: .3s;
+    cursor: pointer; 
+    background-color: rgb(26, 43, 202);
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: 2vw;
+}
+
+/* .DejarBoton{
+    font-size: 9.5vw;
+    margin-left: 7vw;
+    background-color: #1b2854;
+    color: white;
+    text-decoration: none;
+    margin-top: 10vh;
+    border-radius: 2vw;
+    padding: 2vw;
+    border: none;
+} */
+
+/* .DejarBoton:hover{
+    transition: .3s;
+    cursor: pointer; 
+    background-color: rgb(26, 43, 202);
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: 2vw;
+} */
+
+.TerminarBoton{
+    font-size: 35px;
+    background-color: rgb(215, 25, 25);
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: .5vw;
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.TerminarBoton:hover{
+    transition: .3s;
+    font-size: 35px;
+    background-color: rgb(200, 10, 10);
+    color: white;
+    text-decoration: none;
+    border-radius: 2vw;
+    padding: .5vw;
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.BotonComoLink{
+    border: none; 
+    background-color: transparent; 
+    cursor: pointer;
+    color: rgb(0, 102, 255);
+    text-decoration: underline;
+}
+
+
+.contenedor-boton-links{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+  }
+  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      padding: .5vw;
+      padding-bottom: .7vw;
+      margin-left: .5vw;
+      margin-bottom: 1vw;
+    }
+    
+    .dropdown:hover{
+      position: relative;
+      display: inline-block;
+      transition: .3s;
+      text-decoration: none;
+      color: white;
+      background-color: rgb(174, 174, 192);
+    }
+  
+    .dropdown:not(:hover) {
+      transition: .2s;
+  }
+  
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #f9f9f9;
+      padding: 8px 0;
+      margin-top: 4px;
+      min-width: 120px;
+      box-shadow: 0 4px 8px #1b2854;
+    }
+    
+    .dropdown-menu li {
+      padding: 8px 16px;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    } 
+
+    .menuBoton{
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: bold;
+        color: #1b2854;
+        background-color: white;
+    }
+
+    .menuBoton:hover{
+      transition: .3s;
+      background-color: #1b2854;
+      color: #ffffff;
+      border: 2px solid white;
+    }
+
+  .menuBoton:active {
+    transition: .3s;
+    background-color: #1b2854;
+    color: #ffffff;
+    border: 2px solid white;
+    }
+
+    .SeparadorLinks{
+        width: 100%;
+        height: 0px;
+    }
+
+    .LineaSeparadora{
+        color: white; 
+        position: relative;
+        left: 4px;
+        top: -8px;
+    }
