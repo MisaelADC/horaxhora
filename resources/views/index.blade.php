@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Inicio de sesión</title>
+    <title>Dev Inicio de sesión</title>
 
     <link href="{{ asset('Todo.css') }}" rel="stylesheet">
 
@@ -107,13 +107,14 @@
   <body class="d-flex align-items-center py-4 bg-body-tertiary">
 
     <div style="width: 100%;" class="align-items-center">
-
+    
     <main class="form-signin w-100 m-auto">
       <form method="POST" action="{{ route('Login') }}">
         @csrf
         <div style="width: 100%">
           <center>
         <img src="ADCLogoHeader.png" style="height: 100px; position:relative; top:-50px;">
+        <h1>Dev Version</h1>
           </center>
         </div>
         <div class="form-floating">
